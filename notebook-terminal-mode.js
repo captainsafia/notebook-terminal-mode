@@ -1,8 +1,17 @@
 define(['base/js/namespace', 'jquery'], function(Jupyter, $) {
     function enable_terminal_mode() {
+        TERMINAL_MODE_ENABLED = true;
+        terminal_mode();
     }
 
     function disable_terminal_mode() {
+        TERMINAL_MODE_ENABLED = false;
+        terminal_mode();
+    }
+
+    function terminal_mode() {
+        if (TERMINAL_MODE_ENABLED) {
+        }
     }
 
     function place_terminal_mode_button() {
